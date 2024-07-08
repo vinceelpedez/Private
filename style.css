@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0e5e5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.frame {
+    margin-bottom: 20px;
+}
+
+.frame-image {
+    width: 200px;
+    height: 250px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+}
+
+.heart-button {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.letter {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ffcccc;
+    background-color: #ffe6e6;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 5s ease-out, opacity 5s ease-out;
+}
+
+.letter.show {
+    display: block;
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.romantic-font {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+#audio-player {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
